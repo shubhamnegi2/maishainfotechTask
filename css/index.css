@@ -1,0 +1,572 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+* h1,
+* h2,
+* h3,
+* h4,
+* h5 {
+  color: #223a66;
+  font-family: "Exo", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  background-color: #223a66;
+  border: 0;
+  transition: all 0.3s ease;
+}
+button:hover {
+  transition: all 0.3s ease;
+  background-color: #e12454;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 99999;
+  background-color: #fff;
+  box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.5);
+}
+header .logo img {
+  width: 100%;
+}
+header .hamburgerMenu {
+  cursor: pointer;
+  display: none;
+  text-align: center;
+}
+header .hamburgerMenu i {
+  font-size: 3rem;
+}
+header nav ul {
+  margin-bottom: 0px;
+}
+header nav ul li a {
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 600;
+}
+header nav ul li i {
+  margin-left: 0.3rem;
+}
+header .navBtn {
+  text-align: right;
+}
+header .navBtn button {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  background-color: #e12454;
+  border: 0;
+  transition: all 0.3s ease;
+}
+header .navBtn button:hover {
+  transition: all 0.3s ease;
+  background-color: #223a66;
+}
+
+.mainBanner {
+  margin-top: 5rem;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg?w=2000);
+  position: relative;
+}
+.mainBanner::after {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.mainBanner .bannerContent {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 99;
+  color: #fff;
+}
+.mainBanner .bannerContent span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.mainBanner .bannerContent h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 2rem 0rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.mainBanner .bannerContent p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.mainBanner .bannerContent button {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  background-color: #223a66;
+  border: 0;
+  transition: all 0.3s ease;
+}
+.mainBanner .bannerContent button:hover {
+  transition: all 0.3s ease;
+  background-color: #e12454;
+}
+
+.ourServices .serviceCard {
+  padding: 5rem 3rem;
+  background-color: rgb(238, 238, 250);
+}
+.ourServices .serviceCard h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+.ourServices .serviceCard button {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  border: 0;
+}
+.ourServices .serviceCard button:hover {
+  transition: all 0.3s ease;
+  background-color: #e12454;
+}
+.ourServices .bgEEE {
+  background-color: #f7f4f4;
+}
+
+.ourBusiness {
+  margin-top: 8rem;
+}
+.ourBusiness .title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2rem;
+}
+.ourBusiness h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.ourBusiness .topPara {
+  font-size: 1.6rem;
+}
+.ourBusiness .businessCard {
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: #f7f4f4;
+}
+.ourBusiness .businessCard i {
+  color: #223a66;
+  border-radius: 0.5rem;
+  font-size: 4.5rem;
+  padding: 2.5rem;
+  background-color: #fff;
+}
+.ourBusiness .businessCard h3 {
+  margin: 2rem 0rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.ourBusiness .businessCard p {
+  font-size: 1.6rem;
+}
+.ourBusiness .bgEEE {
+  background-color: rgb(238, 238, 250);
+}
+.ourBusiness .noBg {
+  background-color: #fff;
+}
+.ourBusiness .noBg i {
+  background-color: rgb(238, 238, 250);
+}
+
+.getCustomers {
+  margin-top: 8rem;
+}
+.getCustomers .imgWrapper {
+  position: relative;
+  z-index: 9;
+}
+.getCustomers .imgWrapper::after {
+  border-radius: 0.5rem;
+  position: absolute;
+  right: -5rem;
+  top: 5rem;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://www.retaildoc.com/hubfs/Attract%20customers%20%281%29%20%281%29.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(0.16rem);
+  content: "";
+}
+.getCustomers .imgWrapper img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.getCustomers span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2rem;
+}
+.getCustomers h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.getCustomers p {
+  font-size: 1.6rem;
+}
+.getCustomers ul {
+  margin: 2rem 0rem;
+  padding-left: 0rem;
+}
+.getCustomers ul li {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+.getCustomers ul li i {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: #223a66;
+}
+.getCustomers button {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  background-color: #223a66;
+  color: #fff;
+  border: 0;
+}
+.getCustomers button:hover {
+  transition: all 0.3s ease;
+  background-color: #e12454;
+}
+
+.businessValues {
+  padding: 8rem 0rem;
+  background-color: #f7f4f4;
+}
+.businessValues .topBar {
+  margin-bottom: 5rem;
+}
+.businessValues .topBar .title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+.businessValues .topBar h2 {
+  margin: 1.5rem 0rem;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+}
+.businessValues .topBar .topPara {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.businessValues .valuesList .valuescard {
+  text-align: center;
+  padding: 3rem;
+  background-color: #fff;
+}
+.businessValues .valuesList .valuescard .iconWrapper {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.businessValues .valuesList .valuescard .iconWrapper i {
+  font-size: 4rem;
+  color: #223a66;
+}
+.businessValues .valuesList .valuescard h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.businessValues .valuesList .valuescard p {
+  font-size: 1.6rem;
+}
+.businessValues .valuesList .bg1 {
+  background-color: rgb(238, 238, 250) !important;
+}
+
+.seoServices {
+  margin-top: 8rem;
+}
+.seoServices span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2rem;
+}
+.seoServices h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.seoServices p {
+  font-size: 1.6rem;
+}
+.seoServices ul {
+  margin: 2rem 0rem;
+  padding-left: 0rem;
+}
+.seoServices ul li {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+.seoServices ul li i {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: #223a66;
+}
+.seoServices button {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  background-color: #223a66;
+  color: #fff;
+  border: 0;
+}
+.seoServices button:hover {
+  transition: all 0.3s ease;
+  background-color: #e12454;
+}
+.seoServices .imgWrapper {
+  position: relative;
+  z-index: 9;
+}
+.seoServices .imgWrapper::after {
+  border-radius: 0.5rem;
+  position: absolute;
+  left: -5rem;
+  bottom: -5rem;
+  width: 50%;
+  height: 50%;
+  background-image: url(https://outreachmonks.com/wp-content/uploads/2022/07/digital-design-businessman-show-growth-graph-earning-with-digital-marketing-strategy-1024x634.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.seoServices .imgWrapper img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.faq {
+  margin-top: 8rem;
+}
+.faq .videoWrapper {
+  width: 100%;
+  height: 100%;
+}
+.faq .videoWrapper iframe {
+  width: 90%;
+}
+.faq span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2rem;
+}
+.faq h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.faq p {
+  font-size: 1.6rem;
+}
+.faq .faqAaccordian .accordion-button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+.faq .faqAaccordian .accordion-body {
+  font-size: 1.6rem;
+}
+.faq .faqAaccordian .accordion-item {
+  border: 0;
+  border-bottom: 1px solid #000;
+}
+.faq .faqAaccordian button:hover {
+  background-color: none !important;
+}
+.faq .faqAaccordian .accordion-button:focus {
+  background-color: none !important;
+}
+
+footer {
+  margin-top: 8rem;
+  padding: 5rem 0rem;
+  background-color: #f7f4f4;
+}
+footer p {
+  font-size: 1.6rem;
+}
+footer .logo {
+  margin-bottom: 2rem;
+}
+footer .formGroup {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+footer .formGroup input {
+  font-size: 1.6rem;
+  padding-left: 1.5rem;
+  height: 4.5rem;
+  border: 0;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
+footer .formGroup button {
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+footer h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+footer ul {
+  padding-left: 0rem;
+}
+footer ul li {
+  padding-bottom: 1rem;
+}
+footer ul li a {
+  font-size: 1.6rem;
+  color: #000;
+}
+footer ul li a i {
+  margin-right: 1rem;
+}
+footer .details p {
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+  header .navBtn {
+    display: none;
+  }
+  .mainBanner .bannerContent {
+    width: 90%;
+  }
+  .getCustomers .imgWrapper::after {
+    right: -2rem;
+    top: 2rem;
+  }
+  .seoServices .imgWrapper::after {
+    display: none;
+  }
+  .faq .videoWrapper iframe {
+    width: 100%;
+  }
+  footer .formGroup {
+    display: block;
+  }
+  footer .formGroup input {
+    display: block;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1,
+h2 {
+    font-size: 2.5rem !important;
+  }
+  header .logo {
+    text-align: center;
+  }
+  header .logo img {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  .mainBanner .bannerContent span {
+    font-size: 1.2rem;
+  }
+  .mainBanner .bannerContent h1 {
+    font-size: 2.5rem;
+  }
+  .mainBanner .bannerContent p {
+    font-size: 1.4rem;
+  }
+  .mainBanner .bannerContent button {
+    font-size: 1.6rem;
+  }
+  footer .formGroup {
+    display: flex;
+  }
+  footer .formGroup input {
+    display: inline-block;
+    width: auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  header .logo {
+    text-align: left;
+  }
+  header .logo img {
+    width: auto;
+    margin-bottom: 0rem;
+  }
+  header .hamburgerMenu {
+    right: 2rem;
+    top: 3rem;
+    display: block;
+    width: 5rem;
+    margin-right: 3rem;
+  }
+  header .navBarWrapper {
+    display: none;
+  }
+  header .navBarWrapper nav ul {
+    flex-direction: column;
+  }
+  header .navBarWrapper nav ul li {
+    padding: 0.5rem 0rem;
+  }
+  .getCustomers .imgWrapper::after {
+    display: none;
+  }
+  footer .formGroup {
+    display: block;
+  }
+  footer .formGroup input {
+    display: block;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+}/*# sourceMappingURL=index.css.map */
